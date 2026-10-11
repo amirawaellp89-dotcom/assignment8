@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's For Dinner</title>
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- css -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+
+    <div class="nav-container">
+
+        <!-- Logo + Website Name -->
+        <div class="logo-section">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-utensils"></i>
+            </div>
+
+            <div class="logo-text">
+                <h1>What's For Dinner</h1>
+                <p>Your daily meal inspiration</p>
+            </div>
+
+        </div>
+
+
+        <!-- Navbar Icons -->
+        <div class="nav-icons">
+
+            <i class="fa-solid fa-bookmark"></i>
+
+            <i class="fa-solid fa-clock-rotate-left"></i>
+
+            <i class="fa-solid fa-gear"></i>
+
+            <div class="profile">
+                <img src="Image/avatar-2-CwUcGkzI.jpg" alt="Profile">
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+    <body>
+
+    <!-- ================= RECIPE SECTION ================= -->
+
+    <main class="recipe-section">
+
+        <div class="recipe-card">
+
+            <!-- ================= LEFT SIDE ================= -->
+
+            <div class="recipe-image">
+
+                <img id="mealImage" src="Image/images food.jpeg" alt="Shrimp Scampi">
+
+                <!-- Rating -->
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <strong id="mealRating">4.8</strong>
+                    <span id="mealReviews">(356 reviews)</span>
+                </div>
+
+
+                <!-- Meal Information -->
+
+                <div class="meal-info">
+
+                    <!-- Prep Time -->
+                    <div class="info-item">
+
+                        <i class="fa-regular fa-clock"></i>
+
+                        <span>Prep Time</span>
+
+                        <strong id="prepTime">10 min</strong>
+
+                    </div>
+
+
+                    <!-- Cook Time -->
+                    <div class="info-item">
+
+                        <i class="fa-solid fa-fire-burner"></i>
+
+                        <span>Cook Time</span>
+
+                        <strong id="cookTime">15 min</strong>
+
+                    </div>
+
+
+                    <!-- Servings -->
+                    <div class="info-item">
+
+                        <i class="fa-solid fa-users"></i>
+
+                        <span>Servings</span>
+
+                        <strong id="servings">2 people</strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= RIGHT SIDE ================= -->
+
+            <div class="recipe-content">
+
+                <!-- Recipe Header -->
+
+                <div class="recipe-header">
+
+                    <div class="recipe-heading">
+
+                        <div class="tags">
+
+                            <span class="easy-tag" id="mealDifficulty">
+                                Easy
+                            </span>
+
+                            <span class="category-tag" id="mealCategory">
+                                Seafood
+                            </span>
+
+                        </div>
+
+
+                        <h2 id="mealName">
+                            Shrimp Scampi
+                        </h2>
+
+                        <p id="mealDescription">
+                            Garlicky shrimp in white wine butter sauce
+                        </p>
+
+                    </div>
+
+
+                    <!-- Header Buttons -->
+
+                    <div class="recipe-actions">
+
+                        <button class="action-btn" id="bookmarkBtn">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </button>
+
+                        <button class="action-btn" id="shareBtn">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= TABS ================= -->
+
+                <div class="recipe-tabs">
+
+                    <button class="tab-btn active" data-tab="ingredients">
+
+                        <i class="fa-solid fa-list-check"></i>
+
+                        <span>Ingredients</span>
+
+                    </button>
+
+
+                    <button class="tab-btn" data-tab="instructions">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                        <span>Instructions</span>
+
+                    </button>
+
+
+                    <button class="tab-btn" data-tab="nutrition">
+
+                        <i class="fa-solid fa-chart-pie"></i>
+
+                        <span>Nutrition</span>
+
+                    </button>
+
+
+                    <button class="tab-btn" data-tab="tips">
+
+                        <i class="fa-solid fa-lightbulb"></i>
+
+                        <span>Chef's Tips</span>
+
+                    </button>
+
+                </div>
+
+
+                <!-- ================= TAB CONTENT ================= -->
+
+                <div class="tab-content">
+
+
+                    <!-- ========== INGREDIENTS ========== -->
+
+                    <div class="tab-panel active" id="ingredients">
+
+                        <div class="ingredients-box" id="ingredientsList">
+
+                            <div class="ingredient-item">
+
+                                <span class="ingredient-number">1</span>
+
+                                <p>400g large shrimp, peeled</p>
+
+                            </div>
+
+
+                            <div class="ingredient-item">
+
+                                <span class="ingredient-number">2</span>
+
+                                <p>300g linguine pasta</p>
+
+                            </div>
+
+
+                            <div class="ingredient-item">
+
+                                <span class="ingredient-number">3</span>
+
+                                <p>6 cloves garlic, minced</p>
+
+                            </div>
+
+
+                            <div class="ingredient-item">
+
+                                <span class="ingredient-number">4</span>
+
+                                <p>1/2 cup white wine</p>
+
+                            </div>
+
+
+                            <div class="ingredient-item">
+
+                                <span class="ingredient-number">5</span>
+
+                                <p>4 tablespoons butter</p>
+
+                            </div>
+
+
+                            <div class="ingredient-item">
+
+                                <span class="ingredient-number">6</span>
+
+                                <p>2 tablespoons olive oil</p>
+
+                            </div>
+
+
+                            <div class="ingredient-item">
+
+                                <span class="ingredient-number">7</span>
+
+                                <p>Fresh parsley, chopped</p>
+
+                            </div>
+
+
+                            <div class="ingredient-item">
+
+                                <span class="ingredient-number">8</span>
+
+                                <p>Lemon juice and zest</p>
+
+                            </div>
+
+
+                            <div class="ingredient-item">
+
+                                <span class="ingredient-number">9</span>
+
+                                <p>Red pepper flakes</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ========== INSTRUCTIONS ========== -->
+
+                    <div class="tab-panel" id="instructions">
+
+                        <div class="instructions-box" id="instructionsList">
+
+                            <div class="instruction-item">
+
+                                <span class="instruction-number">1</span>
+
+                                <p>
+                                    Cook linguine according to package directions.
+                                    Reserve 1 cup pasta water.
+                                </p>
+
+                            </div>
+
+
+                            <div class="instruction-item">
+
+                                <span class="instruction-number">2</span>
+
+                                <p>
+                                    Heat olive oil and 2 tablespoons butter in a
+                                    large pan. Add garlic and red pepper flakes,
+                                    cook for 1 minute.
+                                </p>
+
+                            </div>
+
+
+                            <div class="instruction-item">
+
+                                <span class="instruction-number">3</span>
+
+                                <p>
+                                    Add shrimp, cook until pink on both sides,
+                                    about 3-4 minutes. Remove and set aside.
+                                </p>
+
+                            </div>
+
+
+                            <div class="instruction-item">
+
+                                <span class="instruction-number">4</span>
+
+                                <p>
+                                    Add white wine to pan, simmer for 2 minutes.
+                                    Add remaining butter and lemon juice.
+                                </p>
+
+                            </div>
+
+
+                            <div class="instruction-item">
+
+                                <span class="instruction-number">5</span>
+
+                                <p>
+                                    Return shrimp to pan, add cooked pasta and
+                                    toss. Add pasta water if needed.
+                                </p>
+
+                            </div>
+
+
+                            <div class="instruction-item">
+
+                                <span class="instruction-number">6</span>
+
+                                <p>
+                                    Garnish with parsley, lemon zest, and serve
+                                    immediately.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ========== NUTRITION ========== -->
+
+                    <div class="tab-panel" id="nutrition">
+
+                        <div class="nutrition-grid">
+
+
+                            <!-- Calories -->
+
+                            <div class="nutrition-item">
+
+                                <div class="nutrition-icon calories">
+                                    <i class="fa-solid fa-fire"></i>
+                                </div>
+
+                                <span>Calories</span>
+
+                                <strong id="calories">
+                                    520 kcal
+                                </strong>
+
+                            </div>
+
+
+                            <!-- Protein -->
+
+                            <div class="nutrition-item">
+
+                                <div class="nutrition-icon protein">
+                                    <i class="fa-solid fa-dumbbell"></i>
+                                </div>
+
+                                <span>Protein</span>
+
+                                <strong id="protein">
+                                    36g
+                                </strong>
+
+                            </div>
+
+
+                            <!-- Carbohydrates -->
+
+                            <div class="nutrition-item">
+
+                                <div class="nutrition-icon carbs">
+                                    <i class="fa-solid fa-wheat-awn"></i>
+                                </div>
+
+                                <span>Carbohydrates</span>
+
+                                <strong id="carbs">
+                                    54g
+                                </strong>
+
+                            </div>
+
+
+                            <!-- Fat -->
+
+                            <div class="nutrition-item">
+
+                                <div class="nutrition-icon fat">
+                                    <i class="fa-solid fa-droplet"></i>
+                                </div>
+
+                                <span>Fat</span>
+
+                                <strong id="fat">
+                                    18g
+                                </strong>
+
+                            </div>
+
+
+                            <!-- Fiber -->
+
+                            <div class="nutrition-item">
+
+                                <div class="nutrition-icon fiber">
+                                    <i class="fa-solid fa-leaf"></i>
+                                </div>
+
+                                <span>Fiber</span>
+
+                                <strong id="fiber">
+                                    3g
+                                </strong>
+
+                            </div>
+
+
+                            <!-- Sodium -->
+
+                            <div class="nutrition-item">
+
+                                <div class="nutrition-icon sodium">
+                                    <i class="fa-solid fa-cube"></i>
+                                </div>
+                                <span>Sodium</span>
+                                <strong id="sodium">
+                                    620mg
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ========== CHEF'S TIPS ========== -->
+                    <div class="tab-panel" id="tips">
+                        <div class="tips-box" id="tipsList">
+                            <div class="tip-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p>
+                                    Don't overcook shrimp - they cook very quickly
+                                </p>
+                            </div>
+                            <div class="tip-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p>
+                                    Use good quality white wine for best flavor
+                                </p>
+                            </div>
+                            <div class="tip-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p>
+                                    Toss pasta in sauce for maximum flavor absorption
+                                </p>
+                            </div>
+                            <div class="tip-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p>
+                                    Add extra lemon for bright, fresh taste
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ================= BOTTOM BUTTON ================= -->
+                <div class="recipe-bottom">
+                    <button class="random-btn" id="randomBtn">
+                        <i class="fa-solid fa-rotate"></i>
+                        Try Another Recipe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
